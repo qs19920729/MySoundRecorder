@@ -1,0 +1,85 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- application name and title of error dialogs-->
+    <string name="app_name">Sound Recorder</string>
+    <!-- Screen title before and during recording -->
+    <!-- Screen title after recording -->
+    <!-- Screen title while playing back a recording -->
+    <!-- Label shown during recording -->
+    <string name="recording">Recording</string>
+    <!-- Label shown when the recording is stopped for a reason other than the user stopping it (e.g. the sd card was removed) -->
+    <string name="recording_stopped">Recording stopped</string>
+    <!-- label shown when there is not enough space to record something -->
+    <string name="storage_is_full">Storage is full</string>
+    <!-- label shown when the recording has reached maximum allowed file size -->
+    <string name="max_length_reached">Maximum length reached</string>
+    <!-- label shown when there is no sd card available to record to [CHAR LIMIT=30] -->
+    <string name="insert_sd_card" product="default">Mount USB storage</string>
+    <!-- label shown when there is no sd card available to record to -->
+    <string name="min_available"><xliff:g id="minutes">%d</xliff:g> min available</string>
+    <!-- label shown when there is less than 1 minute of space left to record -->
+    <string name="sec_available"><xliff:g id="seconds">%d</xliff:g>s available</string>
+
+    <!-- button to accept the current recording and return it to the caller -->
+    <string name="accept">Done</string>
+    <!-- button to discard the current recording and return to the caller -->
+    <string name="discard">Discard</string>
+    <!-- acknowlegement button in a number of dialogs -->
+    <string name="button_ok">OK</string>
+    <!-- Do not translate. Format of the timer that shows how much has been recorded so far -->
+    <string name="timer_format" translatable="false"><xliff:g id="format">%02d:%02d</xliff:g></string>
+
+    <!-- the name under which recordings will be visible in the media database is formatted like this -->
+    <string name="audio_db_title_format"><xliff:g id="format">yyyy-MM-dd HH:mm:ss</xliff:g></string>
+    <!-- all recordings will show up in the media database with this 'artist' name -->
+    <string name="audio_db_artist_name">Your recordings</string>
+    <!-- all recordings will show up in the media database with this 'album' name -->
+    <string name="audio_db_album_name">Audio recordings</string>
+    <!-- all recordings will show up in the media database in a playlist with this name -->
+    <string name="audio_db_playlist_name">My recordings</string>
+
+    <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card [CHAR LIMIT=NONE] -->
+    <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
+    <string name="error_sdcard_access" product="default">Can\'t access SD card.</string>
+    <!-- shown as the message in a dialog when the app encountered an unspecified internal error -->
+    <string name="error_app_internal">Internal application error.</string>
+    <!-- shown as the message in a dialog when the recording could not be added to the media database -->
+    <string name="error_mediadb_new_record">Couldn\'t save recorded audio.</string>
+
+    <!-- qsqsqsqs -->
+    <string name="denied_required_permission">Denied required permission</string>
+    <string name="recording_file_list">Recording file list</string>
+    <string name="recording_now">Recording</string>
+    <string name="save_the_recording">Save the recording</string>
+    <string name="pause">Pause</string>
+    <string name="stop">Return</string>
+    <string name="play">Play</string>
+    <string name="delete_files">Delete recording files</string>
+    <string name="delete">Delete</string>
+    <string name="deleting">Deleting</string>
+    <string name="no_recording_file">(No recording file)</string>
+    <string name="save_record">Save</string>
+
+    <string name="accessing_db_fail">Failed in accessing data base.</string>
+    <string name="saving_fail">Failed in saving</string>
+    <string name="deleting_fail">Failed in deleting</string>
+    <string name="playing_fail">Failed in playing</string>
+    <string name="recording_doc_deleted">Recording document has been deleted.</string>
+    <string name="sd_no">Please insert an SD card.</string>
+    <string name="player_occupied">Player is occupied by other application.</string>
+    <string name="recording_fail">Failed in recording</string>
+    <string name="recorder_occupied">Recorder is occupied by other application.</string>
+    <string name="sd_unmounted">SD card is unmounted.</string>
+    <string name="storage_full">Default storage is full.</string>
+    <string name="alert_delete_single">This item will be deleted</string>
+    <string name="alert_delete_multiple">These items will be deleted</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="not_available">Currently not available</string>
+    <string name="tell_save_record_success">Save succeeded</string>
+    <string name="timeformat">00:00</string>
+
+    <string name="hint">Hint</string>
+    <string name="hint_content">Whether to quit playing?</string>
+    <string name="dialog_record">Whether to quit recording?</string>
+
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="frameLayoutGrayColor">#0069808b</color>
+    <color name="linearLayoutGrayColor">#5069808b</color>
+    <color name="blackColor">#000000</color>
+    <color name="record_file_name">#ffffffff</color>
+    <color name="recording_file_list_text">#C8ffffff</color>
+    <color name="round_background">#1297B0</color>
+    <color name="round_background_light">#B1DCE8</color>
+    <color name="recordingFileGrayColor">#C8FFFFFF</color>
+    <color name="holo_blue_dark_press">#00749D</color>
+    <color name="list_selector">#1e000000</color>
+    <color name="head_view_background">@android:color/holo_blue_dark</color>
+    <color name="line_view_color">#0FD8D8D8</color>
+    <color name="gray">#3e3e3e</color>
+</resources>

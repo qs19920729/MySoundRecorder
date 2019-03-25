@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/sin_record_enabled_am" android:state_enabled="true"></item>
+    <item android:drawable="@drawable/sin_record_disabled_am" android:state_enabled="false"></item>
+    <item android:drawable="@drawable/sin_record_disabled_am" android:state_pressed="true"></item>
+</selector>

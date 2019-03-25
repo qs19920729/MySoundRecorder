@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.insert_sd_card
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" msgid="5955735546071433666">"录音机"</string>
+    <string name="recording" msgid="4426791467211376099">"录音"</string>
+    <string name="recording_stopped" msgid="1580278719585249612">"录音停止"</string>
+    <string name="storage_is_full" msgid="416039755956726221">"存储空间已满"</string>
+    <string name="max_length_reached" msgid="6398215743584093353">"已达到长度上限"</string>
+    <string name="insert_sd_card" product="default" msgid="1007630222084726808">"请插入SD卡"</string>
+    <string name="min_available" msgid="5493947690062988925">"还剩<xliff:g id="MINUTES">%d</xliff:g>分钟"</string>
+    <string name="sec_available" msgid="2297020788861694399">"还剩<xliff:g id="SECONDS">%d</xliff:g>秒"</string>
+    <string name="accept" msgid="1888285552128743656">"完成"</string>
+    <string name="discard" msgid="761613433029406319">"放弃"</string>
+    <string name="button_ok" msgid="3004911343723076226">"确定"</string>
+    <skip />
+    <string name="audio_db_artist_name" msgid="961640229118120080">"您的录音"</string>
+    <string name="audio_db_album_name" msgid="9072588113803264440">"录音"</string>
+    <string name="audio_db_playlist_name" msgid="5592939050047058162">"我的录音"</string>
+    <string name="error_sdcard_access" product="default" msgid="5750308258096153274">"无法使用SD卡。"</string>
+    <string name="error_app_internal" msgid="312884382388702022">"发生内部应用错误。"</string>
+    <string name="error_mediadb_new_record" msgid="261714902333432462">"无法保存录制的音频。"</string>
+
+    <!-- qsqsqs -->
+
+    <string name="denied_required_permission">拒绝申请权限</string>
+    <string name="recording_file_list">录音文件列表</string>
+    <string name="recording_now">正在录音</string>
+    <string name="save_the_recording">是否保存录音</string>
+    <string name="pause">暂停</string>
+    <string name="stop">返回</string>
+    <string name="play">播放</string>
+    <string name="delete_files">删除录音文件</string>
+    <string name="delete">删除</string>
+    <string name="deleting">删除中</string>
+    <string name="no_recording_file">(没有录音文件)</string>
+    <string name="save_record">保存</string>
+
+    <string name="accessing_db_fail">访问数据库失败.</string>
+    <string name="saving_fail">存储失败</string>
+    <string name="deleting_fail">删除失败</string>
+    <string name="playing_fail">录音失败</string>
+    <string name="recording_doc_deleted">文件被删除.</string>
+    <string name="sd_no">请插入SD卡.</string>
+    <string name="player_occupied">播放功能被占用.</string>
+    <string name="recording_fail">录音失败</string>
+    <string name="recorder_occupied">>录音功能被占用.</string>
+    <string name="sd_unmounted">SD卡被卸载.</string>
+    <string name="storage_full">默认存储空间已满.</string>
+    <string name="alert_delete_single">将会删除该文件</string>
+    <string name="alert_delete_multiple">将会删除这些文件</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="not_available">当前不可用</string>
+    <string name="tell_save_record_success">保存成功</string>
+
+    <string name="hint">提示</string>
+    <string name="hint_content">是否退出播放？</string>
+    <string name="dialog_record">是否退出录音？</string>
+
+</resources>

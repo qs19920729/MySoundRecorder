@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (C) 2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MySoundRecoderActivity"
+    android:background="@color/blackColor"
+    >
+
+    <ImageView
+        android:id="@+id/record_switch_backround_light"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"
+        android:src="@drawable/bg"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/recordButton"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/selector_sound_recoder" />
+
+
+
+    <TextView
+        android:id="@+id/recording_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/record_switch_backround_light"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/timerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recording_state"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        />
+
+    <com.qs.mysoundrecorder.view.MarqueeTextView
+        android:id="@+id/stopButton"
+        android:layout_width="220dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="@string/recording_file_list"
+        android:paddingBottom="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:visibility="visible"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:id="@+id/exitButtons"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:splitMotionEvents="false"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/discardButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="20dp"
+            android:paddingTop="15dp"
+            android:text="@string/discard"
+            android:textColor="@color/record_file_name"
+            android:textSize="22sp"
+            android:background="@color/blackColor"
+            android:textAllCaps="false"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@color/record_file_name" />
+
+        <Button
+            android:id="@+id/acceptButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="marquee"
+            android:gravity="left"
+            android:paddingLeft="20dp"
+            android:paddingTop="15dp"
+            android:singleLine="true"
+            android:text="@string/save_record"
+            android:textColor="@color/record_file_name"
+            android:textSize="22sp"
+            android:background="@color/blackColor"
+            android:textAllCaps="false"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/stateMessage2Layout"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:baselineAligned="false"
+        android:visibility="gone"
+        >
+
+
+
+        <com.qs.mysoundrecorder.VUMeter android:id="@+id/uvMeter"
+            android:layout_width="200px"
+            android:layout_height="80px"
+            android:layout_centerInParent="true" />
+
+        <ImageView android:id="@+id/stateLED"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" />
+
+        <TextView android:id="@+id/stateMessage2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recording"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5px"
+            style="@android:style/TextAppearance.Medium"/>
+
+        <TextView android:id="@+id/stateMessage1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/stateMessage2Layout"
+            android:layout_centerHorizontal="true"
+            style="@android:style/TextAppearance.Small" />
+
+        <ProgressBar android:id="@+id/stateProgressBar"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/timerView"
+            android:max="100"
+            android:progress="0"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            style="?android:attr/progressBarStyleHorizontal" />
+
+        <Button android:id="@+id/playButton"
+            android:layout_height="match_parent"
+            style="@style/MediaButton"
+            android:src="@drawable/play" />
+
+    </LinearLayout>
+
+</RelativeLayout>

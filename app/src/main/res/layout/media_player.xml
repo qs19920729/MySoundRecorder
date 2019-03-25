@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/MusicTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="50dp"
+        android:textColor="@color/record_file_name"
+        android:textSize="24sp"
+        android:text="@string/timeformat" />
+
+    <ImageView
+        android:id="@+id/musicState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/MusicTime"
+        android:layout_marginTop="5dp"
+        android:clickable="true"
+       android:layout_centerHorizontal="true"
+        android:textColor="@color/record_file_name"
+        android:src="@drawable/pause_enabled_am"
+         />
+
+    <TextView
+        android:id="@+id/MusicTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/MusicTime"
+        android:layout_marginRight="50dp"
+        android:textColor="@color/record_file_name"
+        android:textSize="24sp"
+        android:text="@string/timeformat" />
+
+    <SeekBar
+        android:id="@+id/MusicSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:focusable="true"
+        android:minHeight="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/MusicTime"
+        />
+
+    <TextView
+        android:id="@+id/MusicName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_below="@id/MusicSeekBar"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/record_file_name"
+        android:textSize="24sp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:id="@+id/exitButtons"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:splitMotionEvents="false"
+        >
+
+        <Button
+            android:id="@+id/BtnPlayorPause"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="20dp"
+            android:paddingTop="15dp"
+            android:text="@string/pause"
+            android:textColor="@color/record_file_name"
+            android:textSize="24sp"
+            android:textAllCaps="false"
+            android:background="@color/blackColor"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@color/record_file_name" />
+
+        <Button
+            android:id="@+id/BtnQuit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="marquee"
+            android:gravity="left"
+            android:paddingLeft="20dp"
+            android:paddingTop="15dp"
+            android:singleLine="true"
+            android:text="@string/stop"
+            android:textColor="@color/record_file_name"
+            android:textSize="24sp"
+            android:textAllCaps="false"
+            android:background="@color/blackColor"
+            />
+
+    </LinearLayout>
+
+
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:gravity="center_horizontal">
+
+        &lt;!&ndash;显示当前进度&ndash;&gt;
+        <TextView
+            android:id="@+id/MusicTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00" />
+
+        <SeekBar
+            android:layout_width="230sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/MusicSeekBar"
+            android:layout_weight="1"
+            android:max="100"
+            android:layout_toRightOf="@+id/MusicTime"/>
+
+        &lt;!&ndash;显示总进度&ndash;&gt;
+        <TextView
+            android:id="@+id/MusicTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:layout_toRightOf="@+id/MusicSeekBar"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/BtnPlayorPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/shape"
+            android:text="PLAY"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/BtnStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:layout_marginRight="15dp"
+            android:text="STOP"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/BtnQuit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:text="QUIT"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>-->
+
+</RelativeLayout>
+
